@@ -12,4 +12,5 @@ for i in range(rows_a):
         for k in range(cols_a):
             result[i][j] += a[i][k] * b[k][j]
 
-print(result)
+if __name__ == "__main__":
+    print('\n'.join(' '.join(map(str, row)) for row in result))
